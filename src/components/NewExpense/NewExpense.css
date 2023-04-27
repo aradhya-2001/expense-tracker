@@ -1,0 +1,12 @@
+.new-expense {
+    background-color: #a892ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%; /* if the width of the screen is smaller than 50 rem then the div's width becomes 95% of the overall then screen size */ 
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+
+ 

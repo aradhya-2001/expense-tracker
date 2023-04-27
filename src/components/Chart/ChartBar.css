@@ -1,0 +1,31 @@
+.chart-bar {
+    height: 100%; /* when display flex of Chart.css is turned off, all chart-bar appears horizontal and a single chart-bar covers fully (100% height) of its parent (not fully it appears coz of 1rem padding in Cart.css) */
+    /* margin-bottom: 2rem; this is used only for understanding */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chart-bar__inner {
+    height: 100%; /* in relative to chart-bar height */
+    width: 100%;
+    border: 1px solid #313131;
+    border-radius: 12px;
+    background-color: #c3b4f3;
+    overflow:hidden;  /* since chart-bar__inner has rounded corners so chart-bar__fill div that sits at bottom (flex-end) of chart-bar__inner has normal sharp corners. We dont need to round off the corners of top horizontal border of chart-bar__fill but we need to round off the sharp corners of bottom horizontal border. So overflow hidden clips the sharp corners (left and right) of chart-bar__fill that overflows out of the rounded corners of chart-bar__inner  */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .chart-bar__fill {
+    background-color: #4826b9;
+    width: 100%;
+    transition: all 0.3s ease-out; /* this applies the effect to the dynamic style i.e. height generated in the HTML */
+  }
+  
+  .chart-bar__label {
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
+  }

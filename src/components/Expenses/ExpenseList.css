@@ -1,0 +1,9 @@
+.non-empty-list {
+    list-style: none; /* list style forms tiny dots at start of every li */
+    padding: 0;
+  }
+  
+  .empty-list {
+    color: white;
+    text-align: center;
+  }

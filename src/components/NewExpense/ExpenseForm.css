@@ -1,0 +1,54 @@
+.expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left; /* All labels appears on top of their's input, at the centre initially. This makes them at left from their centre position */ 
+}
+
+.expense-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.expense-form input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 0;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.form-button-div {
+  text-align: right; /* makes the button on the extreme right of the form */
+}
+
+.form-button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 0;  /* if we comment it then the default values of border of our button shows up like greyish colour and 1 px border  */
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.form-button:hover,
+.form-button:active {
+  background-color: #510674;
+ /*  border-color: #510674; */
+}
+
+.form-button.alternative {
+  color: #220131;
+  /* border-color: transparent; */
+  background-color: transparent;
+}
+
+.form-button.alternative:hover,
+.form-button.alternative:active {
+  background-color: #ddb3f8;
+}
