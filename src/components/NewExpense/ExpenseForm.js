@@ -56,6 +56,10 @@ update((prev_state)=>{
         setId(prev_state=>prev_state+1)
     }
 
+    const curr_date=()=>{
+        return new Date().toISOString().split("T")[0];
+    }
+
     return (
         <form onSubmit={submitHandler} >
             <div className="expense-form">
@@ -69,7 +73,7 @@ update((prev_state)=>{
                 </div>
                 <div>
                     <label>Date</label>
-                    <input onChange={dateHandler} value={date} type="date" min="2021-01-01" max="2023-03-01" />
+                    <input onChange={dateHandler} value={date} type="date" min="2019-01-01" max={curr_date()} />
                 </div>
             </div>
             <div className="form-button-div">
